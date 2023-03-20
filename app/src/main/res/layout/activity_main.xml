@@ -6,19 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guide_line1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5" />
-
-    <TextView
-        android:id="@+id/text_view1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="View 1"
-        android:textSize="20sp"
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@id/guide_line1" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/background"
+        app:layout_constraintDimensionRatio="640:1136"
+        android:layout_width="0dp"
+        android:layout_height="100dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
