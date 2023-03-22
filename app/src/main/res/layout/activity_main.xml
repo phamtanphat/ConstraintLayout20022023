@@ -6,14 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
+    <TextView
+        android:id="@+id/text_view_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#f20"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:text="A"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toStartOf="@id/text_view_b"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#8BDC62"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:text="B"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/text_view_c"
+        app:layout_constraintStart_toEndOf="@id/text_view_a"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0648EC"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:text="C"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/background"
-        app:layout_constraintDimensionRatio="640:1136"
-        android:layout_width="0dp"
-        android:layout_height="100dp"/>
-
+        app:layout_constraintStart_toEndOf="@id/text_view_b"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
